@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TeLIphone — магазин актуальных моделей iPhone.">
+  <title>TeLIphone — выбери свой iPhone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка сайта и переходы между страницами -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="index.html" aria-label="TeLIphone — главная">
+        <span>Te</span><span class="site-logo__highlight">LI</span><span>phone</span><span class="site-logo__dot">.</span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+        <a class="site-nav__link" href="catalog.html">Каталог</a>
+        <a class="site-nav__link" href="product.html">iPhone 18 Pro</a>
+        <a class="site-nav__link" href="order.html">Заявка</a>
+        <a class="site-nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <a class="button button--small site-header__button" href="order.html">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главный экран с фотографией iPhone 18 Pro -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Технологии, которые рядом</p>
+        <h1 class="hero__title">Твой следующий<br><span>iPhone.</span></h1>
+        <p class="hero__description">
+          Актуальные модели Apple — без бесконечного каталога.
+          Выбери свой размер, цвет и объём памяти.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="catalog.html">Выбрать iPhone <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#advantages">Почему TeLIphone ↓</a>
+        </div>
+        <p class="hero__note">Подбор · консультация · удобная заявка</p>
+      </div>
+
+      <img
+        class="hero__image"
+        src="images/iphone-18-pro-colors-mockup-1.webp"
+        alt="iPhone 18 Pro в трёх цветах"
+      >
+    </section>
+
+    <!-- Коротко о преимуществах магазина -->
+    <section class="section" id="advantages">
+      <div class="section-heading">
+        <p class="eyebrow">Покупка без лишнего</p>
+        <h2>Только то, что важно</h2>
+        <p class="section-heading__description">
+          Небольшой каталог, понятные отличия моделей и помощь с выбором.
+        </p>
+      </div>
+
+      <div class="advantage-list">
+        <article class="advantage">
+          <span class="advantage__number">01</span>
+          <h3>Актуальные модели</h3>
+          <p>Собрали устройства последних поколений в одном месте.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage__number">02</span>
+          <h3>Понятный выбор</h3>
+          <p>Сравни основные характеристики и выбери подходящий формат.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage__number">03</span>
+          <h3>Живой контакт</h3>
+          <p>Оставь заявку — обсудим модель и комплектацию.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Несколько популярных моделей из каталога -->
+    <section class="section section--popular" id="popular">
+      <div class="section-heading section-heading--row">
+        <div>
+          <p class="eyebrow">Выбор TeLIphone</p>
+          <h2>Популярные модели</h2>
+        </div>
+        <a class="text-link" href="catalog.html">Весь каталог ↗</a>
+      </div>
+
+      <div class="product-list">
+        <article class="product-card">
+          <a class="product-card__image-area" href="product.html" aria-label="Подробнее об iPhone 18 Pro">
+            <span class="product-card__badge">Новинка</span>
+            <img class="product-card__image" src="images/iphone-18-pro-colors-mockup-1.webp" alt="iPhone 18 Pro в трёх цветах">
+          </a>
+          <div class="product-card__content">
+            <p class="product-card__category">Pro-серия</p>
+            <h3 class="product-card__title"><a href="product.html">iPhone 18 Pro</a></h3>
+            <p class="product-card__description">Продвинутая камера и чип A20 Pro.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">от 149 990 ₽<small>учебная цена</small></span>
+              <a class="round-link" href="product.html" aria-label="Подробнее об iPhone 18 Pro">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-card__image-area" href="catalog.html" aria-label="Открыть iPhone 18 Pro Max в каталоге">
+            <span class="product-card__badge product-card__badge--light">Большой экран</span>
+            <img class="product-card__image" src="images/iphone18-check.jpg" alt="iPhone 18 Pro Max в четырёх цветах">
+          </a>
+          <div class="product-card__content">
+            <p class="product-card__category">Pro-серия</p>
+            <h3 class="product-card__title"><a href="catalog.html">iPhone 18 Pro Max</a></h3>
+            <p class="product-card__description">Большой экран и увеличенное время работы.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">от 169 990 ₽<small>учебная цена</small></span>
+              <a class="round-link" href="catalog.html" aria-label="Открыть каталог">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-card__image-area" href="catalog.html" aria-label="Открыть iPhone 17e в каталоге">
+            <span class="product-card__badge product-card__badge--light">Лаконичный выбор</span>
+            <img class="product-card__image" src="images/dakwj1qpgc8hqm8kmc1c9apoin4vq8l0.jpeg" alt="iPhone 17e в чёрном, белом и розовом цветах">
+          </a>
+          <div class="product-card__content">
+            <p class="product-card__category">Серия 17</p>
+            <h3 class="product-card__title"><a href="catalog.html">iPhone 17e</a></h3>
+            <p class="product-card__description">OLED-дисплей и камера 48 Мп.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">от 89 990 ₽<small>учебная цена</small></span>
+              <a class="round-link" href="catalog.html" aria-label="Открыть каталог">↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Пример модального окна без JavaScript -->
+    <section class="callout">
+      <div>
+        <p class="eyebrow">Нужна помощь?</p>
+        <h2>Подберём модель вместе</h2>
+        <p class="callout__description">Оставь заявку — поможем разобраться в отличиях.</p>
+      </div>
+      <a class="button button--light" href="#consultation">Получить консультацию ↗</a>
+    </section>
+
+    <div class="modal" id="consultation" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <a class="modal__backdrop" href="#popular" aria-label="Закрыть окно"></a>
+      <section class="modal__content">
+        <a class="modal__close" href="#popular" aria-label="Закрыть">×</a>
+        <p class="eyebrow">TeLIphone</p>
+        <h2 id="modal-title">Нужна консультация?</h2>
+        <p>Оставь контакты на странице заявки — поможем выбрать iPhone.</p>
+        <a class="button" href="order.html">Перейти к заявке ↗</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Общий подвал сайта -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <a class="site-logo site-logo--footer" href="index.html">
+        <span>Te</span><span class="site-logo__highlight">LI</span><span>phone</span><span class="site-logo__dot">.</span>
+      </a>
+      <p>Твой следующий iPhone начинается с простого выбора.</p>
+      <a class="text-link text-link--light" href="contacts.html">Связаться с нами ↗</a>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 TeLIphone · учебный проект</span>
+      <span>Цены приведены только для учебного макета.</span>
+    </div>
+  </footer>
+</body>
+</html>

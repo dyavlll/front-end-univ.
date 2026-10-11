@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Оставьте демонстрационную заявку на iPhone в TeLIphone.">
+  <title>Заявка — TeLIphone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="index.html"><span>Te</span><span class="site-logo__highlight">LI</span><span>phone</span><span class="site-logo__dot">.</span></a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a class="site-nav__link" href="index.html">Главная</a>
+        <a class="site-nav__link" href="catalog.html">Каталог</a>
+        <a class="site-nav__link" href="product.html">iPhone 18 Pro</a>
+        <a class="site-nav__link site-nav__link--active" href="order.html">Заявка</a>
+        <a class="site-nav__link" href="contacts.html">Контакты</a>
+      </nav>
+      <a class="button button--small site-header__button" href="contacts.html">Контакты</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div>
+        <p class="eyebrow">Один шаг до выбора</p>
+        <h1 class="page-intro__title">Оставь<br><span>заявку.</span></h1>
+        <p class="page-intro__description">Расскажи, какая модель тебя заинтересовала.</p>
+      </div>
+    </section>
+
+    <section class="order-layout section" id="request">
+      <div class="order-intro">
+        <p class="eyebrow">Свяжемся с тобой</p>
+        <h2>Подскажем детали</h2>
+        <p>Модель, цвет или объём памяти — напиши, что для тебя важно.</p>
+        <ol>
+          <li>Заполни поля формы</li>
+          <li>Мы уточним запрос</li>
+          <li>Обсудим подходящий вариант</li>
+        </ol>
+      </div>
+
+      <!-- Браузер проверяет обязательные поля; серверной отправки у макета нет -->
+      <form class="order-form" action="order.html#request" method="get">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="customer-name">Имя <span class="form-field__required">*</span></label>
+            <input id="customer-name" name="name" type="text" autocomplete="name" placeholder="Например, Алексей" required>
+          </div>
+          <div class="form-field">
+            <label for="customer-email">Электронная почта <span class="form-field__required">*</span></label>
+            <input id="customer-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="customer-phone">Телефон <span class="form-field__required">*</span></label>
+            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-field">
+            <label for="customer-product">Интересующая модель</label>
+            <select id="customer-product" name="product">
+              <option value="">Пока не выбрал</option>
+              <option>iPhone 18 Pro</option>
+              <option>iPhone 18 Pro Max</option>
+              <option>iPhone 17e</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="customer-comment">Комментарий</label>
+          <textarea id="customer-comment" name="comment" rows="4" placeholder="Например, интересует цвет или объём памяти"></textarea>
+        </div>
+
+        <label class="consent-field">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен на обработку данных для связи по заявке <b>*</b></span>
+        </label>
+
+        <p class="order-form__note">Это учебная форма, данные не отправляются в магазин. Не вводи личные данные.</p>
+        <button class="button" type="submit">Проверить поля ↗</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <a class="site-logo site-logo--footer" href="index.html"><span>Te</span><span class="site-logo__highlight">LI</span><span>phone</span><span class="site-logo__dot">.</span></a>
+      <p>Твой следующий iPhone начинается с простого выбора.</p>
+      <a class="text-link text-link--light" href="contacts.html">Связаться с нами ↗</a>
+    </div>
+    <div class="site-footer__bottom"><span>© 2026 TeLIphone · учебный проект</span><span>Цены приведены только для учебного макета.</span></div>
+  </footer>
+</body>
+</html>
